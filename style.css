@@ -1,7 +1,17 @@
 h1 {
-  color: Blue;
+  color: #a2fd06;
 }
 
 p {
   font-size: 18px;
+  color: #ffc21b;
+}
+
+*{
+  font-family: Helvetica;
+  opacity: 0.9;
+}
+
+body {
+  background: #000000;
 }

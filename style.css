@@ -1,14 +1,15 @@
 h1 {
   color: #a2fd06;
+  font-size: 50px;
 }
 
 p {
-  font-size: 18px;
-  color: #ffc21b;
+  font-size: 25px;
+  color: #33c21b;
 }
 
 *{
-  font-family: Helvetica;
+  font-family: helvetica;
   opacity: 0.9;
 }
 

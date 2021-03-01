@@ -1,11 +1,11 @@
 h1 {
-  color: #a2fd06;
-  font-size: 50px;
+  color: #666666;
+  font-size: 30px;
 }
 
 p {
-  font-size: 25px;
-  color: #33c21b;
+  font-size: 20px;
+  color: #333333;
 }
 
 *{
@@ -14,5 +14,5 @@ p {
 }
 
 body {
-  background: #000000;
+  background: #aaaaaa;
 }

@@ -14192,7 +14192,23 @@ a.anchor-link {
 .highlight  {
     margin: 0.4em;
 }
+
+/* Input area styling */
+.jp-InputArea {
+    overflow: hidden;
+}
+
+.jp-InputArea-editor {
+    overflow: hidden;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+}
 </style>
+
 
 
 <!-- Load mathjax -->
@@ -14238,8 +14254,10 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Investigaci&#243;n-y-An&#225;lisis-de-Datos-III">Investigaci&#243;n y An&#225;lisis de Datos III<a class="anchor-link" href="#Investigaci&#243;n-y-An&#225;lisis-de-Datos-III">&#182;</a></h1><h3 id="Jos&#233;-Luis-Baroja,-Facultad-de-Psicolog&#237;a,-UNAM">Jos&#233; Luis Baroja, Facultad de Psicolog&#237;a, UNAM<a class="anchor-link" href="#Jos&#233;-Luis-Baroja,-Facultad-de-Psicolog&#237;a,-UNAM">&#182;</a></h3><p>El curso es la tercera parte de una serie sobre Inferencia Bayesiana. Durante los primeros dos cursos (IAD-1 e IAD-2) cubrimos:</p>
-<h4 id="IAD-1:-Introducci&#243;n-a-Teor&#237;a-de-Probabilidad">IAD-1: Introducci&#243;n a Teor&#237;a de Probabilidad<a class="anchor-link" href="#IAD-1:-Introducci&#243;n-a-Teor&#237;a-de-Probabilidad">&#182;</a></h4><ul>
+<h1 id="Inferencia-Bayesiana">Inferencia Bayesiana<a class="anchor-link" href="#Inferencia-Bayesiana">&#182;</a></h1><h3 id="Investigaci&#243;n-y-An&#225;lisis-de-Datos-II">Investigaci&#243;n y An&#225;lisis de Datos II<a class="anchor-link" href="#Investigaci&#243;n-y-An&#225;lisis-de-Datos-II">&#182;</a></h3><h3 id="Jos&#233;-Luis-Baroja,-Facultad-de-Psicolog&#237;a,-UNAM">Jos&#233; Luis Baroja, Facultad de Psicolog&#237;a, UNAM<a class="anchor-link" href="#Jos&#233;-Luis-Baroja,-Facultad-de-Psicolog&#237;a,-UNAM">&#182;</a></h3><p>Este curso es una presentación de la aproximación Bayesiana al problema de inferencia estadística. La primera parte cubre los conceptos básicos de Teoría de Probabilidad e Inferencia Probabilística, tanto de manera formal, detallando las ecuaciones correspondientes, como de manera computacional, mostrando cómo implementarlas en software estadístico. La segunda parte aborda los modelos de Regresión Lineal y Regresión Logística y muestra cómo implementarlos desde el paradigma Bayesiano. Finalmente, la tercera parte incluye técnicas de comparación entre modelos, extensiones jerárquicas, y otros tipos de modelos cognitivos que pueden estudiarse desde la aproximación Bayesiana.</p>
+<h3 id="Programa">Programa<a class="anchor-link" href="#Programa">&#182;</a></h3><h4 id="Introducci&#243;n-a-Teor&#237;a-de-Probabilidad">Introducci&#243;n a Teor&#237;a de Probabilidad<a class="anchor-link" href="#Introducci&#243;n-a-Teor&#237;a-de-Probabilidad">&#182;</a></h4><ul>
+<li><p>Incertidumbre, probabilidad, e inferencia</p>
+<ul>
 <li><p>Distribuciones de Probabilidad</p>
 </li>
 <li><p>Distribuciones Conjuntas</p>
@@ -14248,35 +14266,15 @@ a.anchor-link {
 </li>
 <li><p><strong>Teorema de Bayes</strong></p>
 </li>
-<li><p>(<code>R</code> y <code>JAGS</code>)</p>
-</li>
 </ul>
-<h4 id="IAD-2:-Modelos-de-Regresi&#243;n-Simple">IAD-2: Modelos de Regresi&#243;n Simple<a class="anchor-link" href="#IAD-2:-Modelos-de-Regresi&#243;n-Simple">&#182;</a></h4><ul>
-<li><p>Repaso general</p>
-</li>
-<li><p>Regresión Lineal Simple</p>
-</li>
-<li><p>Regresión Logística Simple</p>
-</li>
-<li><p>(<code>Jupyter notebooks</code>)</p>
-</li>
-</ul>
-<h3 id="Programa">Programa<a class="anchor-link" href="#Programa">&#182;</a></h3><h4 id="IAD-3:">IAD-3:<a class="anchor-link" href="#IAD-3:">&#182;</a></h4><ul>
-<li><p>Repaso General</p>
-<ul>
-<li><p>Incertidumbre, probabilidad, e inferencia</p>
 </li>
 <li><p>Inferencia Bayesiana con JAGS</p>
 </li>
-<li><p>Regresión Simple</p>
-<ul>
+</ul>
+<h4 id="Regresi&#243;n">Regresi&#243;n<a class="anchor-link" href="#Regresi&#243;n">&#182;</a></h4><ul>
 <li><p>Regresión Lineal Simple</p>
 </li>
 <li><p>Regresión Logística Simple</p>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 <li><p>Regresión Múltiple</p>
 <ul>
@@ -14286,8 +14284,8 @@ a.anchor-link {
 </li>
 </ul>
 </li>
-<li><p>Extensiones Jerárquicas</p>
-</li>
+</ul>
+<h4 id="Comparaci&#243;n-entre-Modelos">Comparaci&#243;n entre Modelos<a class="anchor-link" href="#Comparaci&#243;n-entre-Modelos">&#182;</a></h4><ul>
 <li><p>Prueba de Hipótesis</p>
 <ul>
 <li><p>Factor de Bayes</p>
@@ -14296,18 +14294,13 @@ a.anchor-link {
 </li>
 </ul>
 </li>
-<li><p>Modelos Psicométricos</p>
-<ul>
+</ul>
+<h4 id="Otros-Modelos-Cognitivos">Otros Modelos Cognitivos<a class="anchor-link" href="#Otros-Modelos-Cognitivos">&#182;</a></h4><ul>
 <li><p>Teoría de Respuesta al Reactivo</p>
 </li>
 <li><p>Funciones Psicofísicas</p>
 </li>
-</ul>
-</li>
-<li><p>Modelos Cognitivos</p>
-<ul>
-<li>Teoría de Detección de Señales</li>
-</ul>
+<li><p>Teoría de Detección de Señales</p>
 </li>
 </ul>
 <h3 id="Recursos">Recursos<a class="anchor-link" href="#Recursos">&#182;</a></h3><h4 id="Referencias">Referencias<a class="anchor-link" href="#Referencias">&#182;</a></h4><ul>
@@ -14317,7 +14310,7 @@ a.anchor-link {
 </li>
 <li><p>Kruschke, J. K. (2015). <em>Doing Bayesian Data Analysis. A tutorial with R, JAGS, and Stan (2 ed.).</em> Academic Press. <a href="https://sites.google.com/site/doingbayesiandataanalysis/">https://sites.google.com/site/doingbayesiandataanalysis/</a></p>
 </li>
-<li><p>James, G., Witten, D., Hastie, T. &amp; Tibshirani, R. (2013). <em>An Introduction to Statistical Learning, with Applications in R.</em> Springer. <a href="http://faculty.marshall.usc.edu/gareth-james/ISL/index.html">http://faculty.marshall.usc.edu/gareth-james/ISL/index.html</a></p>
+<li><p>James, G., Witten, D., Hastie, T. &amp; Tibshirani, R. (2013). <em>An Introduction to Statistical Learning, with Applications in R.</em> Springer. <a href="https://www.statlearning.com/">https://www.statlearning.com/</a></p>
 </li>
 </ul>
 <h4 id="Software-necesario">Software necesario<a class="anchor-link" href="#Software-necesario">&#182;</a></h4><ul>
@@ -14353,10 +14346,24 @@ a.anchor-link {
 </ul>
 <h3 id="Sesiones-virtuales">Sesiones virtuales<a class="anchor-link" href="#Sesiones-virtuales">&#182;</a></h3><ul>
 <li>Lunes y Miércoles, 12.00-14.00.</li>
-<li><code>Zoom</code> y/o <code>GoogleMeet</code>, dependiendo de mi suerte <em>contra</em> cada una.</li>
+<li><code>Zoom</code> y/o <code>GoogleMeet</code>, dependiendo de mi suerte contra cada una.</li>
 </ul>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-r"><pre><span></span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
